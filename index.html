@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>O Estudante Universitário</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background: linear-gradient(to bottom, #111827, #1f2937);
+      color:white;
+      line-height:1.6;
+    }
+
+    header{
+      text-align:center;
+      padding:60px 20px;
+      background: rgba(0,0,0,0.4);
+      border-bottom:3px solid #3b82f6;
+    }
+
+    header h1{
+      font-size:3rem;
+      color:#60a5fa;
+      margin-bottom:10px;
+    }
+
+    header p{
+      max-width:800px;
+      margin:auto;
+      font-size:1.1rem;
+      color:#d1d5db;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+      padding:40px 0;
+    }
+
+    section{
+      margin-bottom:60px;
+    }
+
+    .titulo{
+      font-size:2rem;
+      margin-bottom:20px;
+      color:#93c5fd;
+      border-left:6px solid #3b82f6;
+      padding-left:15px;
+    }
+
+    .objetivo{
+      background:#1e293b;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 0 15px rgba(0,0,0,0.4);
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#1e293b;
+      border-radius:20px;
+      padding:20px;
+      text-align:center;
+      transition:0.3s;
+      box-shadow:0 0 15px rgba(0,0,0,0.4);
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 0 20px rgba(96,165,250,0.5);
+    }
+
+    .card img{
+      width:180px;
+      height:180px;
+      object-fit:contain;
+      margin-bottom:15px;
+    }
+
+    .card h3{
+      margin-bottom:10px;
+      color:#60a5fa;
+    }
+
+    .gameplay{
+      background:#0f172a;
+      padding:25px;
+      border-radius:15px;
+    }
+
+    .victory{
+      background:#1e3a8a;
+      padding:25px;
+      border-radius:15px;
+      text-align:center;
+      box-shadow:0 0 15px rgba(0,0,0,0.4);
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      background:#0f172a;
+      color:#9ca3af;
+      margin-top:40px;
+    }
+
+    .highlight{
+      color:#facc15;
+      font-weight:bold;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🎓 O Estudante Universitário</h1>
+
+    <p>
+      Um jogo 2D onde o jogador enfrenta os desafios da vida acadêmica.
+      Entre boletos, cansaço, café e o terrível TCC, o estudante precisa
+      sobreviver aos obstáculos até chegar à universidade e conquistar sua vitória.
+    </p>
+  </header>
+
+  <div class="container">
+
+    <!-- OBJETIVO -->
+    <section>
+      <h2 class="titulo">🎯 Objetivo do Jogo</h2>
+
+      <div class="objetivo">
+        <p>
+          Em <span class="highlight">O Estudante Universitário</span>, o jogador controla
+          um jovem estudante que precisa atravessar diversos obstáculos para alcançar a universidade.
+        </p>
+
+        <br>
+
+        <p>
+          Durante a jornada, será necessário derrotar inimigos que representam dificuldades reais
+          da vida acadêmica, como o cansaço extremo, os boletos para pagar e a dependência de café.
+        </p>
+
+        <br>
+
+        <p>
+          O maior desafio é enfrentar o poderoso chefão:
+          <span class="highlight">o TCC Monstruoso</span>, que ataca lançando folhas e trabalhos acadêmicos.
+        </p>
+
+        <br>
+
+        <p>
+          Após derrotar os inimigos e coletar a
+          <span class="highlight">Nota A+</span> da prova final,
+          o jogador conquista sua vitória acadêmica.
+        </p>
+      </div>
+    </section>
+
+    <!-- PERSONAGEM -->
+    <section>
+      <h2 class="titulo">🧍 Personagem Principal</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <img src="imagens/Parado.png" alt="Personagem Principal">
+
+          <h3>O Estudante</h3>
+
+          <p>
+            Um universitário determinado que enfrenta os desafios
+            da vida acadêmica para alcançar seu sonho.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INIMIGOS -->
+    <section>
+      <h2 class="titulo">👾 Inimigos e Obstáculos</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <img src="imagens/Inimigo3.png" alt="Boleto">
+
+          <h3>Boleto</h3>
+
+          <p>
+            Representa as dificuldades financeiras da vida universitária.
+            Um dos obstáculos mais perigosos do jogo.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="imagens/Inimigo2.png" alt="Xícara de Café">
+
+          <h3>Xícara de Café</h3>
+
+          <p>
+            O café dá energia, mas também simboliza as noites sem dormir
+            estudando para provas e trabalhos.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="imagens/Inimigo1.png" alt="Cansaço">
+
+          <h3>Zumbi do Cansaço</h3>
+
+          <p>
+            Representa o desgaste físico e mental causado pela rotina intensa
+            da faculdade.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CHEFAO -->
+    <section>
+      <h2 class="titulo">💀 Chefão Final</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <img src="imagens/O_livro_monstro_da_tese_viva-removebg-preview.png" alt="Chefão TCC">
+
+          <h3>TCC Monstruoso</h3>
+
+          <p>
+            O inimigo final do jogo.
+            Um gigantesco livro amaldiçoado que lança folhas e trabalhos acadêmicos
+            para impedir o estudante de se formar.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GAMEPLAY -->
+    <section>
+      <h2 class="titulo">🎮 Gameplay</h2>
+
+      <div class="gameplay">
+        <p>
+          • Explore fases inspiradas na rotina universitária.
+        </p>
+
+        <p>
+          • Derrote inimigos e desvie dos obstáculos.
+        </p>
+
+        <p>
+          • Colete itens importantes durante a jornada.
+        </p>
+
+        <p>
+          • Enfrente o TCC no combate final.
+        </p>
+
+        <p>
+          • Pegue a <span class="highlight">Nota A+</span> para vencer o jogo.
+        </p>
+      </div>
+    </section>
+
+    <!-- VITORIA -->
+    <section>
+      <div class="victory">
+        <h2>🏆 Vitória</h2>
+
+        <br>
+
+        <p>
+          Após superar todos os desafios da faculdade,
+          derrotar os inimigos e coletar a prova com nota máxima,
+          o estudante finalmente alcança sua formatura e conquista seu sucesso acadêmico.
+        </p>
+      </div>
+    </section>
+
+      <section>
+      <div class="victory">
+        <h2>🎮 Página do Jogo na Itch.io</h2>
+
+        <br>
+
+        <p>
+          <a href ="https://marcosvinip.itch.io/o-estudante-universitrio" style="color: #ffffff;">Jogar Agora</a>
+        </p>
+      </div>
+    </section>  
+
+  </div>
+
+  <footer>
+    © 2026 - Projeto Acadêmico | O Estudante Universitário
+  </footer>
+
+</body>
+</html>
