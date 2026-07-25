@@ -64,7 +64,8 @@ O objetivo é sobreviver aos obstáculos encontrados durante a jornada universit
 
 ## 📷 Imagens do projeto
 
-*(Adicionar prints do jogo funcionando)*
+<img width="917" height="612" alt="image" src="https://github.com/user-attachments/assets/f96490f3-a780-4be4-9052-77c0a15f406e" />
+
 
 ## 👨‍💻 Autor
 
